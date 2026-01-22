@@ -1,0 +1,28 @@
+body{
+    background-color: #E7ECD6;
+}
+header{
+    background-color: #cedd9b;
+    display: flex;
+    justify-content: center;
+}
+.logo-Tofit{
+    width: 9%;
+}
+footer{
+    background-color: #363636;
+}
+.container{
+    background-color: white;
+    border: 20px;
+    display: flex;
+   
+}
+.container img{
+    width: 20rem;
+}
+.list-produtos li{
+    background-color: white;
+    display: flow-root;
+    justify-content: center;
+}
