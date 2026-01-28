@@ -3,7 +3,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const inputCliente = document.getElementById("clienteNome");
 
   function pegarCarrinho() {
-    return JSON.parse(localStorage.getItem("carrinho")) || [];
+    const dados = JSON.parse(localStorage.getItem("carrinho")) || {};
+
+    // converte formato antigo (array) para novo (objeto)
+    if (Array.isArray(dados)) {
+      const convertido = {};
+      dados.forEach(item => {
+        if (!convertido[item.cliente]) convertido[item.cliente] = [];
+        convertido[item.cliente].push(item.produto);
+      });
+      localStorage.setItem("carrinho", JSON.stringify(convertido));
+      return convertido;
+    }
+
+    return dados;
   }
 
   function salvarCarrinho(carrinho) {
@@ -15,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const cliente = inputCliente.value.trim();
       const nomeProduto = btn.dataset.nome;
 
-      // validação
       if (cliente === "" || cliente.split(" ").length < 2) {
         alert("Digite o nome e sobrenome do cliente!");
         inputCliente.focus();
@@ -24,10 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const carrinho = pegarCarrinho();
 
-      carrinho.push({
-        cliente: cliente,
-        produto: nomeProduto
-      });
+      if (!carrinho[cliente]) carrinho[cliente] = [];
+      carrinho[cliente].push(nomeProduto);
+
+      
 
       salvarCarrinho(carrinho);
 
