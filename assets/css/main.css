@@ -13,9 +13,12 @@ header{
 }
 .logo-carrinho{
     width: 5rem;
+    margin-top: 12rem;
     position: relative;
-    top: 6rem;
-    left: 35rem;;  
+    right: 7.5rem;
+    
+    
+     
 }
 .logo-carrinho :hover{
     color: #363636;
@@ -105,6 +108,7 @@ li button:hover{
 .cliente{
     display: flex;
     justify-content: center;
+    margin-top: 3rem;
 }
 .btn-excluir{
     margin-left: 45rem;
@@ -137,15 +141,19 @@ li button:hover{
   header {
     flex-direction: row;
     padding: 10px 0;
+    
   }
 
   .logo-Tofit {
     width: 110px;
+    margin-left: 35rem;
   }
 
   .logo-carrinho {
-    width: 55px;
-    height: auto;
+    width: 50rem;
+    
+  
+    
   }
 
   /* produtos em 1 coluna */
@@ -190,11 +198,32 @@ li button:hover{
 
   /* produtos em 2 colunas */
   .produtos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 14px;
   }
+.produtos ul{
+  
+}
+.produtos li{
+  width: 35rem;
+  margin-left: 5rem; 
+}
+li h3{
+  width: 380px;
+}
+li h1{
+  width: 370px;
+}
 
+.uva button{
+margin-top:2rem;
+}
+.btn-add{
+margin-top: 1rem;
+margin-left: 13.5rem;
+
+}
   .logo-Tofit {
     width: 140px;
   }
@@ -205,7 +234,9 @@ li button:hover{
 
   /* imagem ajustada */
   .produtos li img {
-    height: 210px;
+    position: relative;
+    left: 4rem;
+    bottom: 0.9rem;
   }
 }
     
