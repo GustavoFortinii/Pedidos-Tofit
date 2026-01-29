@@ -10,6 +10,7 @@ header{
 }
 .logo-Tofit{
     width: 10rem;
+    margin-top: 4rem;
 }
 .logo-carrinho{
     width: 5rem;
@@ -52,11 +53,14 @@ footer{
     list-style: none;
     border-radius: 1rem;
 }
+.div-img{
+
+}
 li img{
     width: 9rem;
 transform: translate(21rem,-3rem);
-
     border-radius: 0.4rem;
+    margin-right: 22rem;
     
 }
 li h1{ width: 16rem;
@@ -106,9 +110,20 @@ li button:hover{
   width: 50rem;
 }
 .cliente{
+  position: relative;
+  bottom: 40px;
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#Txt-nome{
+ margin-left: 12rem;
+
+}
+#clienteNome{
+  position: relative;
+  right: 13.5rem;
+  top: 2rem;
 }
 .btn-excluir{
     margin-left: 45rem;
@@ -138,34 +153,25 @@ li button:hover{
 /* 📱 CELULARES (até 600px) */
 @media (max-width: 600px) {
 
-  header {
-    flex-direction: row;
-    padding: 10px 0;
-    
-  }
+
 
   .logo-Tofit {
-    width: 110px;
-    margin-left: 35rem;
-  }
+    width: 10rem;
+    
 
-  .logo-carrinho {
-    width: 50rem;
-    
-  
-    
   }
 
   /* produtos em 1 coluna */
   .produtos {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    
   }
 
   /* cards mais compactos */
   .produtos li {
-    padding: 10px;
+    width: 20rem;
+    margin-right: 30px;
   }
 
   .produtos h1 {
