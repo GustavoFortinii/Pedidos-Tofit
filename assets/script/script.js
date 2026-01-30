@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const botoes = document.querySelectorAll(".btn-add");
-  const inputCliente = document.getElementById("clienteNome");
+ const inputCliente = document.querySelector("#clienteNome input");
 
   function pegarCarrinho() {
     const dados = JSON.parse(localStorage.getItem("carrinho")) || {};

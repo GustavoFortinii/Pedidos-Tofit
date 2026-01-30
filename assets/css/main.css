@@ -118,12 +118,18 @@ li button:hover{
 #Txt-nome{
 display: flex;
 justify-content: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: larger;
 
 }
 #clienteNome{
   display: flex;
   justify-content: center;
+  height: 2rem;
   
+}
+#clieteNome input{
+  width: 40rem;
 }
 .btn-excluir{
     margin-left: 45rem;
@@ -152,7 +158,9 @@ justify-content: center;
 
 
   @media (max-width:400px){
-
+body{
+   overflow-x: hidden
+}
   .produtos h1{
     margin-bottom: 40px;
   }
@@ -175,7 +183,9 @@ justify-content: center;
     
   
 @media (max-width: 600px) {
-
+body{
+   overflow-x: hidden
+}
   .produtos {
     display: flex;
     flex-direction: column;
@@ -217,7 +227,9 @@ justify-content: center;
    }
 }
 @media (min-width:800px) and (max-width: 1050px){
-
+body{
+   overflow-x: hidden
+}
  .ameixa{
   position: relative;
   top: 10px;
@@ -226,7 +238,9 @@ justify-content: center;
 
 /* 📲 TABLETS (601px até 1024px) */
 @media (min-width: 601px) and (max-width: 1050px) {
-
+body{
+   overflow-x: hidden
+}
   /* produtos em 2 colunas */
   .produtos {
     display: flex;
