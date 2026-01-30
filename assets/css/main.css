@@ -117,13 +117,14 @@ li button:hover{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #Txt-nome{
- margin-left: 12rem;
+display: flex;
+justify-content: center;
 
 }
 #clienteNome{
-  position: relative;
-  right: 13.5rem;
-  top: 2rem;
+  display: flex;
+  justify-content: center;
+  
 }
 .btn-excluir{
     margin-left: 45rem;
@@ -150,57 +151,90 @@ li button:hover{
    RESPONSIVIDADE
    =========================== */
 
-/* 📱 CELULARES (até 600px) */
-@media (max-width: 600px) {
 
-
-
-  .logo-Tofit {
-    width: 10rem;
+  @media (max-width:400px){
+     .produtos {
     
-
+      
+  }
+  .produtos h1{
+    margin-bottom: 40px;
   }
 
-  /* produtos em 1 coluna */
-  .produtos {
-    display: flex;
-    flex-direction: column;
-    
-  }
-
-  /* cards mais compactos */
   .produtos li {
-    width: 20rem;
-    margin-right: 30px;
-  }
-
-  .produtos h1 {
-    font-size: 16px;
-  }
-
-  .produtos h3 {
-    font-size: 13px;
-  }
-
-  /* imagem menor no celular */
-  .produtos li img {
-    height: 180px;
-  }
-
-  /* inputs ocupam toda largura */
-  .cliente input {
     width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    position: static; /* remove deslocamento */
+  }
+
+  .produtos li img {
+   
+  
   }
 
   .btn-add {
-    width: 100%;
-    padding: 12px;
+    max-width: 100px;
+    margin-left: 10rem;
+  
+   }
   }
+    
+  
+@media (max-width: 600px) {
+
+  .produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+  }
+  .produtos h1{
+    margin-bottom: 40px;
+  }
+
+  .produtos li {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    position: static; /* remove deslocamento */
+  }
+
+  .produtos li img {
+    width: 110px;
+    position: relative;
+    right: 40px;
+    bottom: 30px;
+  }
+
+  .btn-add {
+    max-width: 100px;
+    margin-left: 10rem;
+  
+   }
+   .cliente{
+    height: 5rem;
+   }
+   #clienteNome{
+    
+   }
+
+   #Txt-nome{
+  display: flex;
+  justify-content: center;
+
+   }
+}
+@media (min-width:800px) and (max-width: 1050px){
+
+ .ameixa{
+  position: relative;
+  top: 10px;
+ }
 }
 
-
 /* 📲 TABLETS (601px até 1024px) */
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1050px) {
 
   /* produtos em 2 colunas */
   .produtos {
