@@ -2,6 +2,7 @@ body{
     background-color: #cedd9b;
     width: 100%;
     height: 100%;
+    overflow-x: hidden
 }
 header{
     background-color: oklch(87.033% 0.08777 118.704);
@@ -53,9 +54,7 @@ footer{
     list-style: none;
     border-radius: 1rem;
 }
-.div-img{
 
-}
 li img{
     width: 9rem;
 transform: translate(21rem,-3rem);
@@ -153,10 +152,7 @@ justify-content: center;
 
 
   @media (max-width:400px){
-     .produtos {
-    
-      
-  }
+
   .produtos h1{
     margin-bottom: 40px;
   }
@@ -168,10 +164,7 @@ justify-content: center;
     position: static; /* remove deslocamento */
   }
 
-  .produtos li img {
-   
-  
-  }
+
 
   .btn-add {
     max-width: 100px;
@@ -215,9 +208,7 @@ justify-content: center;
    .cliente{
     height: 5rem;
    }
-   #clienteNome{
-    
-   }
+  
 
    #Txt-nome{
   display: flex;
@@ -242,9 +233,7 @@ justify-content: center;
     flex-direction: column;
     gap: 14px;
   }
-.produtos ul{
-  
-}
+
 .produtos li{
   width: 35rem;
   margin-left: 5rem; 
