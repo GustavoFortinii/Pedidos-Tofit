@@ -16,6 +16,8 @@ body{
     border: none;
     width: 100%;
     margin-bottom: 0.3rem;
+    color: black;
+    
 }
 .container-cliente button:hover{
     background-color: #566d03;
