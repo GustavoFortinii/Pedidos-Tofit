@@ -1,0 +1,22 @@
+body{
+    background-color: #cedd9b;
+}
+.container-cliente{
+    background-color: aliceblue;
+    border-radius: 0.3rem;
+        border: 2px solid #566d03;
+}
+.container-cliente h2{
+    margin-left: 1rem;
+}
+.container-cliente button{
+    border-radius: 2rem;
+    background-color: #9bac66;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    margin-bottom: 0.3rem;
+}
+.container-cliente button:hover{
+    background-color: #566d03;
+}
